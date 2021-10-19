@@ -7,10 +7,13 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule, Routes } from '@angular/router';
 import { ScubaInfoComponent } from './scuba-info/scuba-info.component';
 import { HomeComponentComponent } from './home-component/home-component.component';
+import { ProgrammerInfoComponent } from './programmer-info/programmer-info.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponentComponent },
   { path: 'scuba-info', component: ScubaInfoComponent },
+  { path: 'programmer-info', component: ProgrammerInfoComponent},
+
 
 ];
 
@@ -18,7 +21,8 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     ScubaInfoComponent,
-    HomeComponentComponent
+    HomeComponentComponent,
+    ProgrammerInfoComponent
   ],
   imports: [
     BrowserModule,
